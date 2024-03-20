@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Urbanist-ExtraBold';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src: url('../fonts/Urbanist/Urbanist-ExtraBold.woff2') format('woff2'),
+  url('../fonts/Urbanist/Urbanist-ExtraBold.woff') format('woff'),
+}
+
+@font-face {
+  font-family: 'Urbanist-SemiBold';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url('../fonts/Urbanist/Urbanist-SemiBold.woff2') format('woff2'),
+  url('../fonts/Urbanist/Urbanist-SemiBold.woff') format('woff'),
+}
+
+@font-face {
+  font-family: 'Urbanist-Regular';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('../fonts/Urbanist/Urbanist-Regular.woff2') format('woff2'),
+  url('../fonts/Urbanist/Urbanist-Regular.woff') format('woff'),
+}
+
+$font-regular: 'Urbanist-Regular';
+$font-semibold: 'Urbanist-SemiBold';
+$font-extrabold: 'Urbanist-ExtraBold';

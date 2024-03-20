@@ -1,0 +1,17 @@
+.product-card {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__btn {
+    text-align: center;
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 12px;
+    color: #fff;
+    background-color: #4277ff;
+  }
+}
