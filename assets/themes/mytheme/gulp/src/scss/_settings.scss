@@ -1,27 +1,21 @@
-html {
-  box-sizing: border-box;
-}
-
-body,
-html {
-  height: 100%;
-}
-
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+.page {
+  height: 100%;
+  font-family: var(--font-family, sans-serif);
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+.page__body {
   margin: 0;
-  padding: 0;
+  min-width: 360px;
+  min-height: 100%;
+  font-size: 16px;
 }
 
 img {
@@ -34,28 +28,8 @@ a {
   text-decoration: none;
 }
 
-* {
-  outline: none;
-  outline-style: none;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.page {
-  height: 100%;
-  font-family: var(--font-family, sans-serif);
-  -webkit-text-size-adjust: 100%;
-}
-
-.page__body {
-  height: 100%;
-  position: inherit !important;
-}
-
 .site-container {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+  overflow: hidden;
 }
 
 .is-hidden {
@@ -107,10 +81,6 @@ a {
   max-width: var(--container-width);
 }
 
-.js-focus-visible :focus:not(.focus-visible) {
-  outline: none;
-}
-
 .centered {
   text-align: center;
 }
@@ -127,17 +97,4 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
-}
-
-//animation for display:block
-@keyframes fade {
-  from {
-    opacity: 0.1;
-  }
-  to {
-    opacity: 1;
-  }
-
-  //animation-name: fade;
-  //animation-duration: 0.3s;
 }
