@@ -1,19 +1,19 @@
 import gulp from "gulp";
 import browserSync from "browser-sync";
 
-import { paths } from "./gulp-configs/config/paths.js";
-import { clean } from "./gulp-configs/tasks/clean.js";
-import { svgSprites } from "./gulp-configs/tasks/sprite.js";
-import { styles } from "./gulp-configs/tasks/styles.js";
-import { stylesBackend } from "./gulp-configs/tasks/styles-backend.js";
-import { scripts } from "./gulp-configs/tasks/scripts.js";
-import { scriptsBackend } from "./gulp-configs/tasks/scripts-backend.js";
-import { resources } from "./gulp-configs/tasks/resources.js";
-import { images } from "./gulp-configs/tasks/images.js";
-import { webpImages } from "./gulp-configs/tasks/webp.js";
-import { cacheTask } from "./gulp-configs/tasks/cache.js";
-import { rewrite } from "./gulp-configs/tasks/rewrite.js";
-import { zipFiles } from "./gulp-configs/tasks/zip.js";
+import { paths } from "./gulp-settings/config/paths.js";
+import { clean } from "./gulp-settings/tasks/clean.js";
+import { svgSprites } from "./gulp-settings/tasks/sprite.js";
+import { styles } from "./gulp-settings/tasks/styles.js";
+import { stylesBackend } from "./gulp-settings/tasks/styles-backend.js";
+import { scripts } from "./gulp-settings/tasks/scripts.js";
+import { scriptsBackend } from "./gulp-settings/tasks/scripts-backend.js";
+import { resources } from "./gulp-settings/tasks/resources.js";
+import { images } from "./gulp-settings/tasks/images.js";
+import { webpImages } from "./gulp-settings/tasks/webp.js";
+import { cacheTask } from "./gulp-settings/tasks/cache.js";
+import { rewrite } from "./gulp-settings/tasks/rewrite.js";
+import { zipFiles } from "./gulp-settings/tasks/zip.js";
 
 global.app = {
   gulp,
