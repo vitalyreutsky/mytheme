@@ -1,1 +1,1 @@
-import "./components/example.js";
+import "./components/remove-preload.js";

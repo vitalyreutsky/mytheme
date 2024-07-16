@@ -28,6 +28,7 @@ final class init
 			Acf\Blocks\Init::class,
 			CustomPostType\RegisterCustomPostType::class,
 			Helpers\Init::class,
+			Posts\Init::class,
 			SEO\Init::class,
 		);
 	}

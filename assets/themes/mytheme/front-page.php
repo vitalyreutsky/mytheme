@@ -6,12 +6,10 @@
 
 get_header();
 ?>
-<div class="main">
-   <div class="main__wrapper">
-      <?php
-      get_template_part('templates/blocks/hero');
-      ?>
-   </div>
-</div>
+<main class="main">
+   <?php
+   get_template_part('templates/blocks/hero');
+   ?>
+</main>
 <?php
 get_footer(); ?>

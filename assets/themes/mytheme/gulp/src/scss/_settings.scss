@@ -1,21 +1,53 @@
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    overflow: auto !important;
+  }
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-.page {
+* {
+  color: $black;
+  outline: none;
+  outline-style: none;
+  -webkit-tap-highlight-color: transparent;
+  scroll-margin-top: 30px;
+}
+
+html {
   height: 100%;
-  font-family: var(--font-family, sans-serif);
+  box-sizing: border-box;
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+.page {
+  position: inherit !important;
+  height: 100%;
+  font-family: $outfit;
   -webkit-text-size-adjust: 100%;
-  scroll-behavior: smooth;
+
+  font-size: 16px;
 }
 
 .page__body {
-  margin: 0;
-  min-width: 360px;
   min-height: 100%;
-  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1 auto;
 }
 
 img {
@@ -77,8 +109,8 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0 var(--container-offset);
-  max-width: var(--container-width);
+  padding: 0 $container-offset;
+  max-width: $container-width;
 }
 
 .centered {

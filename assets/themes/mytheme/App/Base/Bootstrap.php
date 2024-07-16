@@ -123,7 +123,7 @@ final class Bootstrap
     {
         register_nav_menus(
             array(
-                self::MENUS['header']           => __('Header Menu', TM_TEXTDOMAIN),
+                self::MENUS['header'] => __('Header Menu', TM_TEXTDOMAIN),
             )
         );
     }

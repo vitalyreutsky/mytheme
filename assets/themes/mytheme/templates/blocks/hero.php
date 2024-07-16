@@ -1,7 +1,5 @@
 <div class="hero">
-   <div class="wrapper">
-      <div class="hero__wrapper content-block__wrapper">
-         this is banner!
-      </div>
+   <div class="container">
+      this is hero block
    </div>
 </div>
