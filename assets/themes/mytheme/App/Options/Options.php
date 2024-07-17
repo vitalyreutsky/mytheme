@@ -11,4 +11,4 @@ class Options {
 			acf_add_options_page();
 		}
 	}
-}
+} 
